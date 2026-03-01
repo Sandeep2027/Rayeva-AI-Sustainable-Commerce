@@ -1,4 +1,3 @@
-# ==================== database.py ====================
 import sqlite3
 import os
 from datetime import datetime
@@ -55,4 +54,5 @@ def get_recent_logs(limit=10):
     logs = cursor.fetchall()
     conn.close()
     return logs
+
 
