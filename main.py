@@ -1,4 +1,3 @@
-# ==================== main.py ====================
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from database import init_db, log_interaction, get_recent_logs
@@ -313,4 +312,5 @@ async def api_logs():
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=8000)
