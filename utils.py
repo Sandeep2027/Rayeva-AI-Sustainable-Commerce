@@ -1,4 +1,3 @@
-# ==================== utils.py ====================
 import json
 import re
 import numpy as np
@@ -149,4 +148,5 @@ def generate_impact_module(order_summary: str):
                  (order_summary, json.dumps(result), str(datetime.now())))
     conn.commit()
     conn.close()
+
     return result
